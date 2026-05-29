@@ -1,46 +1,26 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora Juros</title>
-    <link rel="stylesheet" href="./calculadora.css">
+    <title>Juros</title>
+    <link rel="stylesheet" href="./style.css">
     <style>
 @import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Fredoka:wdth,wght@87.5,500&display=swap');
     </style>
 </head>
 <body>
-    <h2 id="informacao">Calculadora de</h2>
-    <h2 id="informacao2">Juros</h2>
-    <p>Simule seus investimentos ou empréstimos <br> de forma rápida e fácil com a nossa calculadora de juros.</p>
-    <div id="saiba"> <a href="./index.html"><button type="button" id="botao9">Saiba mais sobre juros</button></a></div>
-    
-    <p id="livro">📖</p>
-    <p id="seta">➡️</p>
-    
-    <h1>Calculadora de Juros</h1>
-    <div id="formulario2"></div>
-    <div id="formulario"><form id="calculadora">
-        <label for="capital">Capital (R$)</label><br>
-        <input type="number" id="capital" name="capital" /><br><br>
-
-        <label for="taxa">Taxa (% ao mês)</label><br>
-        <input type="number" id="taxa" name="taxa" /><br><br>
-
-        <label for="tempo">Tempo (meses)</label><br>
-        <input type="number" id="tempo" name="tempo" /><br><br>
-
-        <select name="Qual o tipo de juros?" id="tipoJuros">
-            <option value="" selected disabled>Tipo de Juros</option>
-            <option value="jurosSimples">Juros Simples</option>
-            <option value="jurosComposto">Juros Composto</option>
-        </select><br><br>
-        
-
-        <div id="envoltabotao"><button id="botaoenviar" type="button" onclick="calcular()">Enviar</button></div> <br>
-        <button id="botaolimpar" type="button" onclick="limparFormulario()">Limpar Dados</button>
-    </form></div>
-    <script src="calculadora.js"></script>
-
+    <h1 id="simples">Juros Simples</h1><br>
+    <h2>O que é?</h2>
+    <br><p>Juros simples são o acréscimo de um valor percentual calculado exclusivamente sobre o capital inicial ao longo do tempo.</p>
+    <br><h2>Fórmula</h2>
+    <br><h3>J = C . i . t </h3>
+    <p><br>(J): Valor dos juros gerados. <br>(C): Capital inicial (o valor emprestado, investido ou a dívida original). <br>(i): Taxa de juros (deve ser usada na forma decimal). <br>(t): Tempo da operação (deve estar na mesma unidade de medida da taxa, seja em dias, meses ou anos).</p>
+    <br><h1>Juros Composto</h1><br>
+    <h2>O que é?</h2>
+    <br><p>Juros compostos são, basicamente, "juros sobre juros". Diferente do juro simples, onde o percentual é calculado sempre sobre o valor inicial, <br> o juro composto incide sobre o valor total acumulado no mês anterior. Com isso, os juros aumentam mês a mês, criando um efeito "bola de neve".</p>
+    <br><h2>Fórmula</h2>
+    <br><h3>M = C .(1 + i)^t </h3><br>
+    (M): Montante (é o valor final, ou seja, o capital somado ao juros)(C): Capital inicial (o valor emprestado, investido ou a dívida original). <br>(i): Taxa de juros (deve ser usada na forma decimal). <br>(t): Tempo da operação (deve estar na mesma unidade de medida da taxa, seja em dias, meses ou anos).
 </body>
 </html>
