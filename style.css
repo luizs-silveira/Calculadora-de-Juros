@@ -3,10 +3,102 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Fredoka", sans-serif; font-weight: 200px;
+
 }
 
 body{
     padding-top: 20px ;
     text-align: center;
-    background-color: rgb(192, 192, 192);;
+    background: linear-gradient(90deg,  #a8dba6, #6eb47d); 
+    background-size: 400% 400%;
+    animation: mudarFundo 5s ease infinite;
+}
+
+@keyframes mudarFundo {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+footer{
+    display:flex ;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    text-shadow: 0 1px 1px;
+}
+
+#final{
+    padding-top: 40px ;
+}
+
+hr{
+    background: black ;
+    border: none;
+    height: 1px;
+    width: 800px; 
+    position: relative;
+    top: 20px;
+}
+
+#linha{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+   top: 50px;
+}
+
+#cardsimples{
+    background-color: #136b6a37;
+    width: 550px;
+    height: 435px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0 0 10px;
+}
+
+#cardcomposto{
+    background-color: #d5e4cf34;
+    width: 550px;
+    height: 435px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0 0 10px;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    height: 495px;
+}
+
+header{
+    font-size: 30px;
+    text-shadow: 0 2px 2px;
+}
+
+button{
+    background: none;
+    border: none;
+    font-size: 30px;
+}
+
+button:hover{
+    color: rgb(4, 186, 4);
+    text-shadow: 0 0 8px black;
+    cursor: pointer;
 }

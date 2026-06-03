@@ -6,7 +6,7 @@
 }
 
 body{
-    background: linear-gradient(to top right, #194d6e, #98b2c3);
+    background: linear-gradient(135deg, rgb(102, 100, 118), rgba(100, 114, 114, 0.63), rgb(94, 94, 106) );
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -19,8 +19,8 @@ body{
     justify-content: center;
     align-items: center;
     background-color: rgb(192, 192, 192);;
-    width: 280px;
-    height: 400px;
+    width: 320px;
+    height: 410px;
     border-radius: 10px;
     border: solid black 2px;
     
@@ -28,9 +28,13 @@ body{
 
 select{
     font-size: 20px;
+    width: 320px;
     background-color: rgb(192, 192, 192);;
     border: solid black 2px;
     width: 250px;
+    text-align: center;
+    position: relative;
+    left: 15px;
 }
 
 label{
@@ -38,22 +42,37 @@ label{
 }
 input{
     font-size: 25px;
+    width: 280px;
     background-color: rgb(192, 192, 192);;
     border: solid black 2px;
+    color:rgb(2, 2, 147);
+    text-shadow: 0 0 2px ;
 }
 
 #botaoenviar{
-    width: 250px;
+    width: 280px;
     height: 28px;
     background-color: rgb(192, 192, 192);;
 }
+#botaoenviar:hover{
+    color:rgb(2, 2, 147) ;
+    scale: 1.05;
+    text-shadow: 0 0 5px;
+    
+}
+
+#botaolimpar:hover{
+    color:rgb(2, 2, 147) ;
+    scale: 1.05;
+    text-shadow: 0 0 5px;
+}
 
 #envoltabotao{
-    height: 15px;
+    height: 20px;
 }
 
 #botaolimpar{
-    width: 250px;
+    width: 280px;
     height: 28px;
     background-color: rgb(192, 192, 192);;
 }
@@ -70,19 +89,19 @@ h1{
 }
 
 #formulario2{
-    background-color: rgba(0, 0, 0, 0.419);
-    width: 280px;
-    height: 400px;
+    background-color: rgba(0, 0, 0, 0.315);
+    width: 315px;
+    height: 405px;
     border-radius: 10px;
     z-index: -1;
     position: absolute;
-    left: 632px;
+    left: 610px;
     top: 170px;
 }
 
 #informacao{
     position: absolute;
-    left: 150px;
+    left: 280px;
     top: 170px;
     font-size: 30px;
     color: rgb(192, 192, 192);
@@ -95,7 +114,7 @@ h1{
 p{
     font-size: 18px;
     position: absolute;
-    left: 150px;
+    left: 280px;
     top: 220px;
     color: rgb(192, 192, 192);
     text-shadow:  -1px 0 rgba(0, 0, 0, 0.419),  
@@ -106,35 +125,94 @@ p{
 
 #informacao2{
     position: absolute;
-    left: 338px;
-    top: 170px;
+    left: 470px;
+    top: 172px;
     font-size: 30px;
-    color: black;
-    text-shadow:  -1px 0 rgba(0, 0, 0, 0.419),  
-                1px -1px 0 rgba(0, 0, 0, 0.419),
-               -1px  1px 0 rgba(0, 0, 0, 0.2),
-                2px  2px 0 rgba(0, 0, 0, 0.274);
+    color: rgb(2, 2, 147);
+    text-shadow:  -1px -1px rgb(0, 0, 0),  
+                1px -1px 0 rgb(0, 0, 0),
+               -1px  1px 0 rgb(0, 0, 0),
+                2px  2px 0 rgb(0, 0, 0),
 }
 
-#livro{
-    position: absolute;
-    top:280px;
-    left: 200px; ;
-}
 
-#seta{
-    position: absolute;
-    top:282px;
-    left: 375px; ;
-}
 
 #botao9{
-    width: 300px;
+    width: 220px;
     height: 30px;
     border-radius: 8px;
     position: absolute;
-    top:280px;
-    left: 150px;
+    top:300px;
+    left: 278px;
     font-size: 15px;
     background-color: rgb(192, 192, 192);;
+}
+
+#botao9:hover{
+    color: rgb(2, 2, 147);
+    scale: 1.1;
+    text-shadow: 0 0 2px blue;
+}
+
+#jurostitulo{
+    color: rgb(2, 2, 147);
+    text-shadow: 0 0 3px black;
+}
+
+#resultado{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(192, 192, 192);;
+    width: 220px;
+    height: 120px;
+    border-radius: 10px;
+    border: solid black 2px;
+    position: absolute;
+    right: 350px;
+    top: 160px;
+}
+
+#resultado2{
+    background-color: rgba(0, 0, 0, 0.219);;
+    width: 220px;
+    height: 125px;
+    border-radius: 10px;
+    position: absolute;
+    top: 0px;
+    z-index: -1;
+}
+
+.jurosresul{
+    position: relative;
+    top: 10px;
+     padding-left: 10px;
+}
+
+.montanteresul{
+    position: relative;
+    top: 20px;
+    padding-left: 10px;
+}
+
+#titulinho2{
+    position: relative;
+    left: 55px;
+}
+
+#jurostado{
+    position: absolute;
+    top: 0px;
+    right: 65px;
+    color: rgb(2, 2, 147);
+    text-shadow: 0 0 1px;
+    width: 90px;
+}
+
+#montado{
+    position: absolute;
+    top: 0px;
+    right: 30px;
+    color: rgb(2, 2, 147);
+    text-shadow: 0 0 1px;
+    width: 90px;
 }

@@ -1,46 +1,62 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora Juros</title>
     <link rel="stylesheet" href="./calculadora.css">
     <style>
-@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Fredoka:wdth,wght@87.5,500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Fredoka:wdth,wght@87.5,500&display=swap');
     </style>
 </head>
+
 <body>
     <h2 id="informacao">Calculadora de</h2>
     <h2 id="informacao2">Juros</h2>
-    <p>Simule seus investimentos ou empréstimos <br> de forma rápida e fácil com a nossa calculadora de juros.</p>
-    <div id="saiba"> <a href="./calculadora.html"><button type="button" id="botao9">Saiba mais sobre juros</button></a></div>
-    
-    <p id="livro">📖</p>
-    <p id="seta">➡️</p>
-    
-    <h1>Calculadora de Juros</h1>
+    <p>Simule seus investimentos ou empréstimos <br> de forma rápida e fácil com a nossa <br>calculadora de juros.</p>
+    <div id="saiba"> <a href="./calculadora.html"><button type="button" id="botao9">📖 Saiba mais sobre juros
+                ➡️</button></a></div>
+
+    <h1 id="jurostitulo">Calculadora de Juros</h1>
     <div id="formulario2"></div>
-    <div id="formulario"><form id="calculadora">
-        <label for="capital">Capital (R$)</label><br>
-        <input type="number" id="capital" name="capital" /><br><br>
+    <div id="resultado">
+        <h2 id="titulinho2">Resultado:</h2>
+        <div class="jurosresul">
+            <h3>Juros:</h3>
+            <h3 id="jurostado"></h3>
+        </div>
+        <div class="montanteresul">
+            <h3>Montante:</h3>
+            <h3 id="montado"></h3>
+        </div>
+        <div id="resultado2"></div>
+    </div>
+    <div id="formulario">
+        <form id="calculadora">
+            <label for="capital">Capital (R$)</label><br>
+            <input type="number" id="capital" name="capital" /><br><br>
 
-        <label for="taxa">Taxa (% ao mês)</label><br>
-        <input type="number" id="taxa" name="taxa" /><br><br>
+            <label for="taxa">Taxa (% ao mês)</label><br>
+            <input type="number" id="taxa" name="taxa" /><br><br>
 
-        <label for="tempo">Tempo (meses)</label><br>
-        <input type="number" id="tempo" name="tempo" /><br><br>
+            <label for="tempo">Tempo (meses)</label><br>
+            <input type="number" id="tempo" name="tempo" /><br><br>
 
-        <select name="Qual o tipo de juros?" id="tipoJuros">
-            <option value="" selected disabled>Tipo de Juros</option>
-            <option value="jurosSimples">Juros Simples</option>
-            <option value="jurosComposto">Juros Composto</option>
-        </select><br><br>
-        
+            <select name="Qual o tipo de juros?" id="tipoJuros">
+                <option value="" selected disabled>Tipo de Juros</option>
+                <option value="jurosSimples">Juros Simples</option>
+                <option value="jurosComposto">Juros Composto</option>
+            </select><br><br>
 
-        <div id="envoltabotao"><button id="botaoenviar" type="button" onclick="calcular()">Enviar</button></div> <br>
-        <button id="botaolimpar" type="button" onclick="limparFormulario()">Limpar Dados</button>
-    </form></div>
+
+            <div id="envoltabotao"><button id="botaoenviar" type="button" onclick="calcular()">Enviar</button></div>
+            <br>
+            <button id="botaolimpar" type="button" onclick="limparFormulario()">Limpar Dados</button>
+        </form>
+    </div>
     <script src="calculadora.js"></script>
 
 </body>
+
 </html>
