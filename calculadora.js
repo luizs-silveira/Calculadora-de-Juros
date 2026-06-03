@@ -36,8 +36,8 @@ function limparFormulario() {
  let capital = String(document.getElementById("capital").value = " ");
  let taxa = String(document.getElementById("taxa").value = " ");
  let tempo = String(document.getElementById("tempo").value = " ");
- let jurostado = String(document.getElementById("jurostado").value = " ");
- let montado = String(document.getElementById("montado").value = " ");
+ let jurostado = String(document.getElementById("jurostado").innerText = "");
+ let montado = String(document.getElementById("montado").innerText = " ");
 }
 
 
