@@ -102,3 +102,54 @@ button:hover{
     text-shadow: 0 0 8px black;
     cursor: pointer;
 }
+
+@media(max-width:600px){
+    header{
+        font-size: 14px;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        height: 78vh;
+    }
+    #cardsimples{
+        padding-bottom: 0px;
+        font-size: 13px;
+        width: 400px;
+        height: 310px;
+        position: absolute;
+        top: 70px;
+    }
+    #cardsimples p{
+        font-size: 13px;
+    }
+    #cardcomposto{
+        padding: 0px;
+        margin: 0%;
+       font-size: 13px;
+        width: 400px;
+        height: 390px;
+        position: absolute;
+        top: 400px;
+    }
+    #linha{
+        position: absolute;
+        top: 840px;
+    }
+
+    #botaovoltar{
+        position: relative;
+        top: 30px;
+        font-size: 20px;
+        padding-bottom: 0px;
+        
+    }
+
+    footer{
+        font-size: 12px;
+        position: fixed;
+        top: 830px;
+        left: 10px;
+    }
+}
